@@ -29,9 +29,9 @@ class SDProfiloRedaktiloViewController: SDViewController {
         didSet {
             self.homeButton.rx.tap
                 .subscribe(onNext: { [unowned self] in
-                    self.navigationController?.dismiss(animated: true, completion: {
-                        SDViewController.splashVC?.performSegue(withIdentifier: R.segue.sdSplashScreenViewController.homeSegue.identifier, sender: self)
-                    })
+                    SDUserDefault.shared.currentLoadState = .main
+                    self.navigationController?.dismiss(animated: true, completion: nil)
+                    SDViewController.splashVC?.performSegue(withIdentifier: R.segue.sdSplashScreenViewController.homeSegue.identifier, sender: self)
                 })
                 .disposed(by: self._disposeBag)
 

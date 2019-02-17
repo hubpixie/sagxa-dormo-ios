@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.2">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 12.0px}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {text-decoration: underline ; font-kerning: none}
+    span.s2 {font-kerning: none}
+    span.s3 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s4 {font: 12.0px Courier; font-kerning: none}
+    span.s5 {font: 12.0px Times; -webkit-text-stroke: 0px #000000}
+    span.s6 {font: 12.0px Times; font-kerning: none}
+    span.s7 {-webkit-text-stroke: 0px #000000}
+    span.s8 {font: 14.0px Times; text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
+    td.td1 {width: 201.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 160.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 133.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 132.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td5 {width: 133.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 22.0px; font: 18.0px Times; color: #0000e9; -webkit-text-stroke: #0000e3"><span class="s1"><a href="http://apionrails.icalialabs.com/book/chapter_two#sec-rest_api"><b>2.2 Setting the API</b></a></span></h2>
+<p class="p2"><span class="s2">An API is defined by <a href="http://en.wikipedia.org/wiki/Application_programming_interface"><span class="s3">wikipedia</span></a> as <i>an application programming interface (API) specifies how some software components should interact with each other.</i> In other words the way systems interact with each other through a common interface, in our case a web service built with </span><span class="s4">json</span><span class="s2">. There are other kinds of communication protocols like SOAP, but we are not covering that in here.</span></p>
+<p class="p2"><span class="s2">JSON as the Internet media type is highly accepted because of readability, extensibility and easy to implement in fact many of the current frameworks consume json api’s by default, in Javascript there is <a href="https://angularjs.org/"><span class="s3">Angular</span></a> or <a href="http://emberjs.com/"><span class="s3">EmberJS</span></a>, but there are great libraries for objective-c too like <a href="https://github.com/AFNetworking/AFNetworking"><span class="s3">AFNetworking</span></a> or <a href="http://restkit.org/"><span class="s3">RESTKit</span></a>. There are probably good solutions for Android, but because of my lack of experience on that development platform I might not be the right person to recommend you something.</span></p>
+<p class="p2"><span class="s2">All right, so we are building our api with </span><span class="s4">json</span><span class="s2">, but there are many ways to achieve this, the first thing that could come to your mind would be just to start dropping some routes defining the <a href="http://en.wikipedia.org/wiki/Web_Services_Description_Language#Objects_in_WSDL_1.1_.2F_WSDL_2.0"><span class="s3">end points</span></a> but they may not have a <a href="http://www.w3.org/2005/Incubator/wcl/matching.html"><span class="s3">URI pattern</span></a> clear enough to know which resource is being exposed. The protocol or structure I’m talking about is <a href="http://en.wikipedia.org/wiki/Representational_state_transfer"><span class="s3">REST</span></a> which stands for Representational State Transfer and by wikipedia definition <i>is a way to create, read, update or delete information on a server using simple HTTP calls. It is an alternative to more complex mechanisms like SOAP(</i><a href="http://apionrails.icalialabs.com/book/chapter_two#code-soap_call"><span class="s3"><i>Listing 2.1</i></span></a><i>), CORBA and RPC. A REST call is simply a GET HTTP request to the server.</i></span></p>
+<p class="p3"><span class="s2">Listing 2.1: SOAP call example<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s2">aService.getUser("1")</span></p>
+<p class="p2"><span class="s2">And in REST you may call a URL with an especific HTTP request, in this case with a </span><span class="s4">GET</span><span class="s2"> request (<a href="http://apionrails.icalialabs.com/book/chapter_two#code-rest_call"><span class="s3">Listing 2.2</span></a>)</span></p>
+<p class="p3"><span class="s2">Listing 2.2: REST call example<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s2">http://domain.com/resources_name/uri_pattern</span></p>
+<p class="p2"><span class="s2">RESTful APIs must follow at least 3 simple guidelines:</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s5"></span><span class="s6">A base <a href="http://en.wikipedia.org/wiki/Uniform_resource_identifier"><span class="s3">URI</span></a>, such as </span><span class="s2">http://example.com/resources/</span><span class="s6">.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li3"><span class="s7"></span><span class="s2">An Internet media type to represent the data, it is commonly </span><span class="s4">JSON</span><span class="s2"> and is commonly set through headers exchange.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li3"><span class="s7"></span><span class="s2">Follow the standard <a href="http://en.wikipedia.org/wiki/HTTP_method#Request_methods"><span class="s3">HTTP Methods</span></a> such as GET, POST, PUT, DELETE.<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s2">Resource</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">GET</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p3"><span class="s2">POST</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s2">PUT</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p3"><span class="s2">DELETE</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s2">http://example.com/resources</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2"><b>Reads</b> the resource or resources defined by the URI pattern</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p3"><span class="s2"><b>Creates</b> a new entry into the resources collection</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s2"><b>Updates</b> a collection or member of the resources</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p3"><span class="s2"><b>Destroys</b> a collection or member of the resources</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s2">This might not be clear enough or may look like a lot of information to digest but as we move on with the tutorial, hopefully it’ll get a lot easier to understand.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="http://apionrails.icalialabs.com/book/chapter_two#sec-routes_constraints_namespaces"><b>2.2.1 Routes, Constraints and Namespaces</b><span class="s8"><b></b></span></a></span></h3>
+<p class="p2"><span class="s2">Before start typing any code, we prepare the code with git, the workflow we’ll be using a branch per chapter, upload it to github and then merge it with master, so let’s get started open the terminal, </span><span class="s4">cd</span><span class="s2"> to the </span><span class="s4">market_place_api</span><span class="s2"> directory and type in the following:</span></p>
+<p class="p4"><span class="s2">$ git checkout -b setting-api</span></p>
+<p class="p4"><span class="s2">Switched to a new branch 'setting-api'</span></p>
+<p class="p2"><span class="s2">We are only going to be working on the </span><span class="s4">config/routes.rb</span><span class="s2"> (<a href="http://apionrails.icalialabs.com/book/chapter_two#code-current_routes"><span class="s3">Listing 2.3</span></a>), as we are just going to set the </span><span class="s4">constraints</span><span class="s2">, the </span><span class="s4">base_uri</span><span class="s2"> and the default response </span><span class="s4">format</span><span class="s2"> for each request.</span></p>
+<p class="p3"><span class="s2">Listing 2.3: Default routes.rb file<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s2">MarketPlaceApi::Application.routes.draw do</span></p>
+<p class="p4"><span class="s2">.</span></p>
+<p class="p4"><span class="s2">.</span></p>
+<p class="p4"><span class="s2">.</span></p>
+<p class="p4"><span class="s2">end</span></p>
+<p class="p2"><span class="s2">First of all erase all commented code that comes within the file, we are not gonna need it. Then commit it, just as a warm up:</span></p>
+<p class="p4"><span class="s2">$ git add config/routes.rb</span></p>
+<p class="p4"><span class="s2">$ git commit -m "Removes comments from the routes file"</span></p>
+<p class="p4"><span class="s2">[setting-api f5e98f7] Removes comments from the routes file</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space"> </span>1 file changed, 3 insertions(+), 56 deletions(-)</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space"> </span>rewrite config/routes.rb (97%)</span></p>
+<p class="p2"><span class="s2">We are going to isolate the api controllers under a namespace, in Rails this is fairly simple, just create a folder under the </span><span class="s4">app/controllers</span><span class="s2"> named </span><span class="s4">api</span><span class="s2">, the name is important as it is the namespace we’ll use for managing the controllers for the api endpoints. (<a href="http://apionrails.icalialabs.com/book/chapter_two#code-create_api_folder"><span class="s3">Listing 2.4</span></a>)</span></p>
+<p class="p6"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><br>
+</span></p>
+</body>
+</html>

@@ -21,14 +21,30 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
     /// Resource file `error_page.html`.
     static let error_pageHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "error_page", pathExtension: "html")
+    /// Resource file `web1.html`.
+    static let web1Html = Rswift.FileResource(bundle: R.hostingBundle, name: "web1", pathExtension: "html")
+    /// Resource file `web2.html`.
+    static let web2Html = Rswift.FileResource(bundle: R.hostingBundle, name: "web2", pathExtension: "html")
     
     /// `bundle.url(forResource: "error_page", withExtension: "html")`
     static func error_pageHtml(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.error_pageHtml
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "web1", withExtension: "html")`
+    static func web1Html(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.web1Html
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "web2", withExtension: "html")`
+    static func web2Html(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.web2Html
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -75,7 +91,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
   struct storyboard {
     /// Storyboard `History`.
     static let history = _R.storyboard.history()
@@ -87,6 +103,8 @@ struct R: Rswift.Validatable {
     static let login = _R.storyboard.login()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `Preferoj`.
+    static let preferoj = _R.storyboard.preferoj()
     
     /// `UIStoryboard(name: "History", bundle: ...)`
     static func history(_: Void = ()) -> UIKit.UIStoryboard {
@@ -111,6 +129,11 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    
+    /// `UIStoryboard(name: "Preferoj", bundle: ...)`
+    static func preferoj(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.preferoj)
     }
     
     fileprivate init() {}
@@ -672,6 +695,15 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if _R.storyboard.main().webController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'webController' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
       }
+      
+      fileprivate init() {}
+    }
+    
+    struct preferoj: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = UIKit.UINavigationController
+      
+      let bundle = R.hostingBundle
+      let name = "Preferoj"
       
       fileprivate init() {}
     }

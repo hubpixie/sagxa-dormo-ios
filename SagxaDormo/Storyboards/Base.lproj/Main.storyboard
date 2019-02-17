@@ -17,14 +17,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg4-Vb-WHu">
+                                <rect key="frame" x="89" y="292" width="197" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xgc-NQ-bGV"/>
+                    <navigationItem key="navigationItem" id="xgc-NQ-bGV">
+                        <barButtonItem key="leftBarButtonItem" title="≡" id="KCQ-gZ-U5e">
+                            <connections>
+                                <segue destination="RJG-Jm-3me" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="88U-Ru-wQC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="9"/>
+            <point key="canvasLocation" x="1760.8" y="8.5457271364317844"/>
+        </scene>
+        <!--Preferoj-->
+        <scene sceneID="VQG-lS-pZi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Preferoj" id="RJG-Jm-3me" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekJ-Rz-eQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2233" y="-308"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hdp-b3-sT0">
@@ -90,7 +113,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ay-2X-l9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="1308"/>
+            <point key="canvasLocation" x="1761" y="1320"/>
         </scene>
         <!--Splash Screen View Controller-->
         <scene sceneID="3Io-ap-fwR">
@@ -128,8 +151,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="1Qw-yg-exe" kind="relationship" relationship="viewControllers" id="E6F-j4-5S8"/>
-                        <segue destination="L4v-4a-DLJ" kind="relationship" relationship="viewControllers" id="ttb-Ya-6KM"/>
-                        <segue destination="zMF-FA-DvF" kind="relationship" relationship="viewControllers" id="bOL-LB-rgd"/>
+                        <segue destination="zMF-FA-DvF" kind="relationship" relationship="viewControllers" id="wZO-7S-dQB"/>
+                        <segue destination="L4v-4a-DLJ" kind="relationship" relationship="viewControllers" id="3PS-R1-lWb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyy-Su-Cwo" userLabel="First Responder" sceneMemberID="firstResponder"/>

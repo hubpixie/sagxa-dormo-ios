@@ -14,27 +14,13 @@ import UIKit
 }
 
 class SDViewController: UIViewController {
-    /* 画面起動の状態 */
-    enum LoadState {
-        case tutorial
-        case phoneNumberReg
-        case passcode
-        case main
-        case dummy
-    }
-    
-    /* 画面起動の状態 */
-    enum LoginProvider {
-        case email
-        case facebook
-        case google
-        case twitter
-        case none
-    }
+
     //カレント認証プロバイダー
-    static var currentLoginProvider: LoginProvider = .none
+    static var currentLoginProvider: SDUserManager.LoginProvider = .none
     
     static var splashVC: SDSplashScreenViewController?
+    static var mainVC: SDMainViewController?
+    static var loginVC: SDLoginViewController?
 
     var navigationBarBottomMargin: CGFloat  {
         var bottomMargin : CGFloat = 0
@@ -152,7 +138,7 @@ class SDViewController: UIViewController {
 
     
     //mark: loadCheck For SaĝaDormo
-    class func loadCheckForSD(checkHandler: ((_ loadState: LoadState, _ error: Error?)->())?) -> Void{
+    class func loadCheckForSD(checkHandler: ((_ loadState: SDUserManager.LoadState, _ error: Error?)->())?) -> Void{
         return
     }
     

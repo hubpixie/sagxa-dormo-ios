@@ -14,6 +14,7 @@ class SDLoginViewController: SDViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        SDViewController.loginVC = self
     }
     
 
