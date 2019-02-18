@@ -148,6 +148,15 @@
 		7DC0A57D219FEC600057A3D1 /* HogeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */; };
 		7DC0A57E219FEC600057A3D1 /* HogeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */; };
 		7DC0A57F219FEC600057A3D1 /* HogeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */; };
+		7DEE84A3221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */; };
+		7DEE84A4221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */; };
+		7DEE84A5221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */; };
+		7DEE84A6221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */; };
+		7DEE84A7221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */; };
+		7DEE84A8221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */; };
+		7DEE84AA221B0533000098BF /* konsilo.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A9221B0533000098BF /* konsilo.html */; };
+		7DEE84AB221B0533000098BF /* konsilo.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A9221B0533000098BF /* konsilo.html */; };
+		7DEE84AC221B0533000098BF /* konsilo.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A9221B0533000098BF /* konsilo.html */; };
 		7DF8849C21D6561C00813708 /* SDPushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */; };
 		7DF8849D21D6561C00813708 /* SDPushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */; };
 		7DF8849E21D6561C00813708 /* SDPushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */; };
@@ -218,6 +227,9 @@
 		7DC0A56C219FDC1C0057A3D1 /* SDApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDApiClient.swift; sourceTree = "<group>"; };
 		7DC0A571219FDF280057A3D1 /* UserParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserParam.swift; sourceTree = "<group>"; };
 		7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogeViewModel.swift; sourceTree = "<group>"; };
+		7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonsiloInfoCell.swift; sourceTree = "<group>"; };
+		7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KonsiloInfoCell.xib; sourceTree = "<group>"; };
+		7DEE84A9221B0533000098BF /* konsilo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = konsilo.html; sourceTree = "<group>"; };
 		7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDPushFadeSegue.swift; sourceTree = "<group>"; };
 		7DF8849B21D6561C00813708 /* SDPresentSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDPresentSegue.swift; sourceTree = "<group>"; };
 		A88108EF4900FA0B5529BD40 /* Pods_SagxaDormo_staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SagxaDormo_staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -384,6 +396,7 @@
 		7D4B079F216B8D2900D19D1A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7DEE84A0221AEFD2000098BF /* Cell */,
 				7D4B07B8216B93EA00D19D1A /* View */,
 				7D4B07A0216B8D2900D19D1A /* ViewModel */,
 				7D4B07A1216B8D2900D19D1A /* Label */,
@@ -453,6 +466,7 @@
 		7D4B07A7216B8D2900D19D1A /* Html */ = {
 			isa = PBXGroup;
 			children = (
+				7DEE84A9221B0533000098BF /* konsilo.html */,
 				7D11DD8C2219A79C002CAEB6 /* web1.html */,
 				7D11DD8D2219A79C002CAEB6 /* web2.html */,
 				7D0B9980218EECD8003738F7 /* error_page.html */,
@@ -538,6 +552,15 @@
 				7DC0A564219FDB5E0057A3D1 /* SDApiCore.swift */,
 			);
 			path = SDApi;
+			sourceTree = "<group>";
+		};
+		7DEE84A0221AEFD2000098BF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */,
+				7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -645,7 +668,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA9A1182195E2970002AD87 /* info-staging.plist in Resources */,
+				7DEE84A8221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */,
 				7D0B9981218EECD8003738F7 /* error_page.html in Resources */,
+				7DEE84AC221B0533000098BF /* konsilo.html in Resources */,
 				7DA9A1192195E2970002AD87 /* Info-dev.plist in Resources */,
 				7D2E42A4218E0385006B1C3F /* Main.storyboard in Resources */,
 				7D507E63216B8B9F00AFC535 /* Assets.xcassets in Resources */,
@@ -670,7 +695,9 @@
 				7D82B274221851EE0057AE2E /* Preferoj.storyboard in Resources */,
 				7D73870B2195DB4E00347597 /* Login.storyboard in Resources */,
 				7D73870C2195DB4E00347597 /* locale-misc.strings in Resources */,
+				7DEE84AA221B0533000098BF /* konsilo.html in Resources */,
 				7D73870D2195DB4E00347597 /* LaunchScreen.storyboard in Resources */,
+				7DEE84A6221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */,
 				7D11DD912219A79D002CAEB6 /* web2.html in Resources */,
 				7D73870E2195DB4E00347597 /* Konsilo.storyboard in Resources */,
 				7D73870F2195DB4E00347597 /* History.storyboard in Resources */,
@@ -688,7 +715,9 @@
 				7D82B275221851EE0057AE2E /* Preferoj.storyboard in Resources */,
 				7D7387392195DB5C00347597 /* Login.storyboard in Resources */,
 				7D73873A2195DB5C00347597 /* locale-misc.strings in Resources */,
+				7DEE84AB221B0533000098BF /* konsilo.html in Resources */,
 				7D73873B2195DB5C00347597 /* LaunchScreen.storyboard in Resources */,
+				7DEE84A7221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */,
 				7D11DD922219A79D002CAEB6 /* web2.html in Resources */,
 				7D73873C2195DB5C00347597 /* Konsilo.storyboard in Resources */,
 				7D73873D2195DB5C00347597 /* History.storyboard in Resources */,
@@ -898,6 +927,7 @@
 				7DF8849E21D6561C00813708 /* SDPushFadeSegue.swift in Sources */,
 				7D4B07B5216B902D00D19D1A /* Date+Misc.swift in Sources */,
 				7D4B07C4216B94D600D19D1A /* SDConstantEnums.swift in Sources */,
+				7DEE84A5221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */,
 				7D4B07B7216B90FC00D19D1A /* R.generated.swift in Sources */,
 				7D2E42C7218E18C7006B1C3F /* SDUsageItemsViewController.swift in Sources */,
 				7D2E42B4218E0712006B1C3F /* SDProfiloRedaktiloViewController.swift in Sources */,
@@ -941,6 +971,7 @@
 				7DF8849C21D6561C00813708 /* SDPushFadeSegue.swift in Sources */,
 				7D7386FA2195DB4E00347597 /* Date+Misc.swift in Sources */,
 				7D7386FB2195DB4E00347597 /* SDConstantEnums.swift in Sources */,
+				7DEE84A3221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */,
 				7D7386FC2195DB4E00347597 /* R.generated.swift in Sources */,
 				7D7386FD2195DB4E00347597 /* SDUsageItemsViewController.swift in Sources */,
 				7D7386FE2195DB4E00347597 /* SDProfiloRedaktiloViewController.swift in Sources */,
@@ -984,6 +1015,7 @@
 				7DF8849D21D6561C00813708 /* SDPushFadeSegue.swift in Sources */,
 				7D7387282195DB5C00347597 /* Date+Misc.swift in Sources */,
 				7D7387292195DB5C00347597 /* SDConstantEnums.swift in Sources */,
+				7DEE84A4221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */,
 				7D73872A2195DB5C00347597 /* R.generated.swift in Sources */,
 				7D73872B2195DB5C00347597 /* SDUsageItemsViewController.swift in Sources */,
 				7D73872C2195DB5C00347597 /* SDProfiloRedaktiloViewController.swift in Sources */,

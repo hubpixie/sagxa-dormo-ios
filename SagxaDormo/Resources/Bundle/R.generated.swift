@@ -21,10 +21,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 4 files.
   struct file {
     /// Resource file `error_page.html`.
     static let error_pageHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "error_page", pathExtension: "html")
+    /// Resource file `konsilo.html`.
+    static let konsiloHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "konsilo", pathExtension: "html")
     /// Resource file `web1.html`.
     static let web1Html = Rswift.FileResource(bundle: R.hostingBundle, name: "web1", pathExtension: "html")
     /// Resource file `web2.html`.
@@ -33,6 +35,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "error_page", withExtension: "html")`
     static func error_pageHtml(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.error_pageHtml
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "konsilo", withExtension: "html")`
+    static func konsiloHtml(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.konsiloHtml
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -61,8 +69,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `KonsiloInfoCell`.
+    static let konsiloInfoCell = _R.nib._KonsiloInfoCell()
+    
+    /// `UINib(name: "KonsiloInfoCell", in: bundle)`
+    static func konsiloInfoCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.konsiloInfoCell)
+    }
+    
     fileprivate init() {}
   }
   
@@ -71,8 +87,23 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
   struct segue {
+    /// This struct is generated for `SDKonsiloViewController`, and contains static references to 1 segues.
+    struct sdKonsiloViewController {
+      /// Segue identifier `sanoTelefonoSegue`.
+      static let sanoTelefonoSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SDKonsiloViewController, SDSanoTelefonoViewController> = Rswift.StoryboardSegueIdentifier(identifier: "sanoTelefonoSegue")
+      
+      /// Optionally returns a typed version of segue `sanoTelefonoSegue`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func sanoTelefonoSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SDKonsiloViewController, SDSanoTelefonoViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.sdKonsiloViewController.sanoTelefonoSegue, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
     /// This struct is generated for `SDSplashScreenViewController`, and contains static references to 1 segues.
     struct sdSplashScreenViewController {
       /// Segue identifier `homeSegue`.
@@ -627,6 +658,17 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _KonsiloInfoCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "KonsiloInfoCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> KonsiloInfoCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? KonsiloInfoCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   

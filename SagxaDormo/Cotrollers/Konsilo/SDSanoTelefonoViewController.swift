@@ -86,16 +86,19 @@ class SDSanoTelefonoViewController: SDViewController {
 extension SDSanoTelefonoViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         if webView === self._fonoEnhavoWebView {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {[weak self] () in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {[weak self] () in
                 guard let weakSelf = self else {return}
-                weakSelf.fonoButton.isHidden = false
                 weakSelf.heightfonoEnhavoViewLC.constant = webView.scrollView.contentSize.height
                 
                 weakSelf.scrollView.contentSize.height = weakSelf.heightfonoEnhavoViewLC.constant + weakSelf.heightfonoTempoViewLC.constant + 40
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                    weakSelf.fonoButton.isHidden = false
+                })
             }
         }
         if webView === self._fonoTempoWebView {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {[weak self] () in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {[weak self] () in
                 guard let weakSelf = self else {return}
                 weakSelf.heightfonoTempoViewLC.constant = webView.scrollView.contentSize.height
 
