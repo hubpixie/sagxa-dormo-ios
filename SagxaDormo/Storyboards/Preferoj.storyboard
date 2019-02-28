@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ad7-Eu-NLG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VBx-ZQ-vrd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ad7-Eu-NLG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zcM-4N-9Bb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2ff-SY-d7i" kind="relationship" relationship="rootViewController" id="6DT-Dv-LXe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8f-yo-Rsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2684" y="44.527736131934034"/>
+        </scene>
+        <!--Preferoj View Controller-->
+        <scene sceneID="AwY-Sa-QEG">
+            <objects>
+                <viewController id="2ff-SY-d7i" customClass="SDPreferojViewController" customModule="SagxaDormo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" id="cq9-jM-Eic">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6z-86-1Pf">
+                                <rect key="frame" x="0.0" y="0.0" width="307" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzY-y8-Lbr">
+                                <rect key="frame" x="284" y="637" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11980950342465753" green="0.023223458904109588" blue="0.27956442636986301" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c6z-86-1Pf" firstAttribute="bottom" secondItem="hmP-aj-6U4" secondAttribute="bottom" id="4Xu-bL-HYN"/>
+                            <constraint firstItem="c6z-86-1Pf" firstAttribute="leading" secondItem="hmP-aj-6U4" secondAttribute="leading" id="8T6-Pb-2He"/>
+                            <constraint firstItem="c6z-86-1Pf" firstAttribute="top" secondItem="cq9-jM-Eic" secondAttribute="top" id="OYh-5G-vgw"/>
+                            <constraint firstItem="hmP-aj-6U4" firstAttribute="trailing" secondItem="c6z-86-1Pf" secondAttribute="trailing" constant="68" id="W0h-yl-NvN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hmP-aj-6U4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8FM-h1-jpL"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="nzY-y8-Lbr" id="1vU-uN-UZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNC-bS-JQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1810.4000000000001" y="44.527736131934034"/>
+        </scene>
+    </scenes>
+</document>

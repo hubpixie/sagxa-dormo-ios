@@ -21,14 +21,46 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 5 files.
   struct file {
+    /// Resource file `dormo.jpg`.
+    static let dormoJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "dormo", pathExtension: "jpg")
     /// Resource file `error_page.html`.
     static let error_pageHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "error_page", pathExtension: "html")
+    /// Resource file `konsilo.html`.
+    static let konsiloHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "konsilo", pathExtension: "html")
+    /// Resource file `web1.html`.
+    static let web1Html = Rswift.FileResource(bundle: R.hostingBundle, name: "web1", pathExtension: "html")
+    /// Resource file `web2.html`.
+    static let web2Html = Rswift.FileResource(bundle: R.hostingBundle, name: "web2", pathExtension: "html")
+    
+    /// `bundle.url(forResource: "dormo", withExtension: "jpg")`
+    static func dormoJpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.dormoJpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "error_page", withExtension: "html")`
     static func error_pageHtml(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.error_pageHtml
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "konsilo", withExtension: "html")`
+    static func konsiloHtml(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.konsiloHtml
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "web1", withExtension: "html")`
+    static func web1Html(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.web1Html
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "web2", withExtension: "html")`
+    static func web2Html(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.web2Html
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -40,13 +72,29 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
+    /// Image `dormo.jpg`.
+    static let dormoJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "dormo.jpg")
+    
+    /// `UIImage(named: "dormo.jpg", bundle: ..., traitCollection: ...)`
+    static func dormoJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.dormoJpg, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `KonsiloInfoCell`.
+    static let konsiloInfoCell = _R.nib._KonsiloInfoCell()
+    
+    /// `UINib(name: "KonsiloInfoCell", in: bundle)`
+    static func konsiloInfoCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.konsiloInfoCell)
+    }
+    
     fileprivate init() {}
   }
   
@@ -55,8 +103,23 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
   struct segue {
+    /// This struct is generated for `SDKonsiloViewController`, and contains static references to 1 segues.
+    struct sdKonsiloViewController {
+      /// Segue identifier `sanoTelefonoSegue`.
+      static let sanoTelefonoSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SDKonsiloViewController, SDSanoTelefonoViewController> = Rswift.StoryboardSegueIdentifier(identifier: "sanoTelefonoSegue")
+      
+      /// Optionally returns a typed version of segue `sanoTelefonoSegue`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func sanoTelefonoSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SDKonsiloViewController, SDSanoTelefonoViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.sdKonsiloViewController.sanoTelefonoSegue, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
     /// This struct is generated for `SDSplashScreenViewController`, and contains static references to 1 segues.
     struct sdSplashScreenViewController {
       /// Segue identifier `homeSegue`.
@@ -75,7 +138,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
   struct storyboard {
     /// Storyboard `History`.
     static let history = _R.storyboard.history()
@@ -87,6 +150,8 @@ struct R: Rswift.Validatable {
     static let login = _R.storyboard.login()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `Preferoj`.
+    static let preferoj = _R.storyboard.preferoj()
     
     /// `UIStoryboard(name: "History", bundle: ...)`
     static func history(_: Void = ()) -> UIKit.UIStoryboard {
@@ -111,6 +176,11 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    
+    /// `UIStoryboard(name: "Preferoj", bundle: ...)`
+    static func preferoj(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.preferoj)
     }
     
     fileprivate init() {}
@@ -604,6 +674,17 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _KonsiloInfoCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "KonsiloInfoCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> KonsiloInfoCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? KonsiloInfoCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -670,8 +751,18 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "dormo.jpg") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'dormo.jpg' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().webController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'webController' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
       }
+      
+      fileprivate init() {}
+    }
+    
+    struct preferoj: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = UIKit.UINavigationController
+      
+      let bundle = R.hostingBundle
+      let name = "Preferoj"
       
       fileprivate init() {}
     }

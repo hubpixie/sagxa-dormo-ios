@@ -10,9 +10,20 @@
 		0564ED3A1B4E2CDBDA5C3D2B /* Pods_SagxaDormo_staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88108EF4900FA0B5529BD40 /* Pods_SagxaDormo_staging.framework */; };
 		3B1D023DE12BAC4B1BE15D27 /* Pods_SagxaDormo_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A84BAB365B0AF4C9A28E118 /* Pods_SagxaDormo_dev.framework */; };
 		57454FAFFB07788F7BCB273D /* Pods_SagxaDormo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC9D333AFD206220D7CC86D /* Pods_SagxaDormo.framework */; };
-		61D6BB8D657E5646B433FBBC /* Pods_SagxaDormo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC9D333AFD206220D7CC86D /* Pods_SagxaDormo.framework */; };
 		7D0B997C218EE184003738F7 /* locale-misc.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B997E218EE184003738F7 /* locale-misc.strings */; };
 		7D0B9981218EECD8003738F7 /* error_page.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B9980218EECD8003738F7 /* error_page.html */; };
+		7D11DD89221999FE002CAEB6 /* SDSanoTelefonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11DD88221999FE002CAEB6 /* SDSanoTelefonoViewController.swift */; };
+		7D11DD8A221999FE002CAEB6 /* SDSanoTelefonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11DD88221999FE002CAEB6 /* SDSanoTelefonoViewController.swift */; };
+		7D11DD8B221999FE002CAEB6 /* SDSanoTelefonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11DD88221999FE002CAEB6 /* SDSanoTelefonoViewController.swift */; };
+		7D11DD8E2219A79D002CAEB6 /* web1.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8C2219A79C002CAEB6 /* web1.html */; };
+		7D11DD8F2219A79D002CAEB6 /* web1.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8C2219A79C002CAEB6 /* web1.html */; };
+		7D11DD902219A79D002CAEB6 /* web1.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8C2219A79C002CAEB6 /* web1.html */; };
+		7D11DD912219A79D002CAEB6 /* web2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8D2219A79C002CAEB6 /* web2.html */; };
+		7D11DD922219A79D002CAEB6 /* web2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8D2219A79C002CAEB6 /* web2.html */; };
+		7D11DD932219A79D002CAEB6 /* web2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8D2219A79C002CAEB6 /* web2.html */; };
+		7D191131221C52E9004134CA /* dormo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D191130221C52E9004134CA /* dormo.jpg */; };
+		7D191132221C52E9004134CA /* dormo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D191130221C52E9004134CA /* dormo.jpg */; };
+		7D191133221C52E9004134CA /* dormo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D191130221C52E9004134CA /* dormo.jpg */; };
 		7D1CB735218EF1730058FBCA /* UIScrollView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB734218EF1730058FBCA /* UIScrollView+ext.swift */; };
 		7D2E42A3218E0385006B1C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E429F218E0385006B1C3F /* LaunchScreen.storyboard */; };
 		7D2E42A4218E0385006B1C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42A1218E0385006B1C3F /* Main.storyboard */; };
@@ -45,11 +56,9 @@
 		7D4B07BE216B93EB00D19D1A /* UIActivityIndicatorView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07BA216B93EA00D19D1A /* UIActivityIndicatorView+ext.swift */; };
 		7D4B07BF216B93EB00D19D1A /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07BB216B93EA00D19D1A /* UIColor+ext.swift */; };
 		7D4B07C0216B93EB00D19D1A /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07BC216B93EA00D19D1A /* UIView+ext.swift */; };
-		7D4B07C3216B94D600D19D1A /* SDLocaleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07C1216B94D600D19D1A /* SDLocaleUtil.swift */; };
 		7D4B07C4216B94D600D19D1A /* SDConstantEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07C2216B94D600D19D1A /* SDConstantEnums.swift */; };
 		7D507E5C216B8B9E00AFC535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D507E5B216B8B9E00AFC535 /* AppDelegate.swift */; };
 		7D507E63216B8B9F00AFC535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D507E62216B8B9F00AFC535 /* Assets.xcassets */; };
-		7D7386EC2195DB4E00347597 /* SDLocaleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07C1216B94D600D19D1A /* SDLocaleUtil.swift */; };
 		7D7386ED2195DB4E00347597 /* SDKonsiloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E42B9218E0DBC006B1C3F /* SDKonsiloViewController.swift */; };
 		7D7386EE2195DB4E00347597 /* UIScrollView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB734218EF1730058FBCA /* UIScrollView+ext.swift */; };
 		7D7386EF2195DB4E00347597 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07BC216B93EA00D19D1A /* UIView+ext.swift */; };
@@ -81,7 +90,6 @@
 		7D73870D2195DB4E00347597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E429F218E0385006B1C3F /* LaunchScreen.storyboard */; };
 		7D73870E2195DB4E00347597 /* Konsilo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42BF218E16CB006B1C3F /* Konsilo.storyboard */; };
 		7D73870F2195DB4E00347597 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42BD218E16CB006B1C3F /* History.storyboard */; };
-		7D73871A2195DB5C00347597 /* SDLocaleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07C1216B94D600D19D1A /* SDLocaleUtil.swift */; };
 		7D73871B2195DB5C00347597 /* SDKonsiloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E42B9218E0DBC006B1C3F /* SDKonsiloViewController.swift */; };
 		7D73871C2195DB5C00347597 /* UIScrollView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB734218EF1730058FBCA /* UIScrollView+ext.swift */; };
 		7D73871D2195DB5C00347597 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B07BC216B93EA00D19D1A /* UIView+ext.swift */; };
@@ -113,6 +121,15 @@
 		7D73873B2195DB5C00347597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E429F218E0385006B1C3F /* LaunchScreen.storyboard */; };
 		7D73873C2195DB5C00347597 /* Konsilo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42BF218E16CB006B1C3F /* Konsilo.storyboard */; };
 		7D73873D2195DB5C00347597 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42BD218E16CB006B1C3F /* History.storyboard */; };
+		7D82B270221834AC0057AE2E /* SDUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B26F221834AB0057AE2E /* SDUserDefault.swift */; };
+		7D82B271221834AC0057AE2E /* SDUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B26F221834AB0057AE2E /* SDUserDefault.swift */; };
+		7D82B272221834AC0057AE2E /* SDUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B26F221834AB0057AE2E /* SDUserDefault.swift */; };
+		7D82B274221851EE0057AE2E /* Preferoj.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D82B273221851EE0057AE2E /* Preferoj.storyboard */; };
+		7D82B275221851EE0057AE2E /* Preferoj.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D82B273221851EE0057AE2E /* Preferoj.storyboard */; };
+		7D82B276221851EE0057AE2E /* Preferoj.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D82B273221851EE0057AE2E /* Preferoj.storyboard */; };
+		7D82B278221853650057AE2E /* SDPreferojViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B277221853650057AE2E /* SDPreferojViewController.swift */; };
+		7D82B279221853650057AE2E /* SDPreferojViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B277221853650057AE2E /* SDPreferojViewController.swift */; };
+		7D82B27A221853650057AE2E /* SDPreferojViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B277221853650057AE2E /* SDPreferojViewController.swift */; };
 		7DA4362B2199BB6700D15516 /* SDSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4362A2199BB6700D15516 /* SDSplashScreenViewController.swift */; };
 		7DA4362C2199BB6700D15516 /* SDSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4362A2199BB6700D15516 /* SDSplashScreenViewController.swift */; };
 		7DA4362D2199BB6700D15516 /* SDSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4362A2199BB6700D15516 /* SDSplashScreenViewController.swift */; };
@@ -133,6 +150,15 @@
 		7DC0A57D219FEC600057A3D1 /* HogeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */; };
 		7DC0A57E219FEC600057A3D1 /* HogeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */; };
 		7DC0A57F219FEC600057A3D1 /* HogeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */; };
+		7DEE84A3221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */; };
+		7DEE84A4221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */; };
+		7DEE84A5221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */; };
+		7DEE84A6221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */; };
+		7DEE84A7221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */; };
+		7DEE84A8221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */; };
+		7DEE84AA221B0533000098BF /* konsilo.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A9221B0533000098BF /* konsilo.html */; };
+		7DEE84AB221B0533000098BF /* konsilo.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A9221B0533000098BF /* konsilo.html */; };
+		7DEE84AC221B0533000098BF /* konsilo.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE84A9221B0533000098BF /* konsilo.html */; };
 		7DF8849C21D6561C00813708 /* SDPushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */; };
 		7DF8849D21D6561C00813708 /* SDPushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */; };
 		7DF8849E21D6561C00813708 /* SDPushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */; };
@@ -154,6 +180,10 @@
 		7D0B997D218EE184003738F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/locale-misc.strings"; sourceTree = "<group>"; };
 		7D0B997F218EE1AB003738F7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "ja.lproj/locale-misc.strings"; sourceTree = "<group>"; };
 		7D0B9980218EECD8003738F7 /* error_page.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = error_page.html; sourceTree = "<group>"; };
+		7D11DD88221999FE002CAEB6 /* SDSanoTelefonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSanoTelefonoViewController.swift; sourceTree = "<group>"; };
+		7D11DD8C2219A79C002CAEB6 /* web1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = web1.html; sourceTree = "<group>"; };
+		7D11DD8D2219A79C002CAEB6 /* web2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = web2.html; sourceTree = "<group>"; };
+		7D191130221C52E9004134CA /* dormo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dormo.jpg; sourceTree = "<group>"; };
 		7D1CB734218EF1730058FBCA /* UIScrollView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ext.swift"; sourceTree = "<group>"; };
 		7D2E42A0218E0385006B1C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2E42A2218E0385006B1C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -182,7 +212,6 @@
 		7D4B07BA216B93EA00D19D1A /* UIActivityIndicatorView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+ext.swift"; sourceTree = "<group>"; };
 		7D4B07BB216B93EA00D19D1A /* UIColor+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		7D4B07BC216B93EA00D19D1A /* UIView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
-		7D4B07C1216B94D600D19D1A /* SDLocaleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDLocaleUtil.swift; sourceTree = "<group>"; };
 		7D4B07C2216B94D600D19D1A /* SDConstantEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDConstantEnums.swift; sourceTree = "<group>"; };
 		7D507E58216B8B9E00AFC535 /* SagxaDormo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SagxaDormo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D507E5B216B8B9E00AFC535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +219,9 @@
 		7D507E67216B8B9F00AFC535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D7387142195DB4E00347597 /* SagxaDormo-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SagxaDormo-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7387422195DB5C00347597 /* SagxaDormo-staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SagxaDormo-staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D82B26F221834AB0057AE2E /* SDUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDUserDefault.swift; sourceTree = "<group>"; };
+		7D82B273221851EE0057AE2E /* Preferoj.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferoj.storyboard; sourceTree = "<group>"; };
+		7D82B277221853650057AE2E /* SDPreferojViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPreferojViewController.swift; sourceTree = "<group>"; };
 		7DA4362A2199BB6700D15516 /* SDSplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSplashScreenViewController.swift; sourceTree = "<group>"; };
 		7DA9A1162195E2960002AD87 /* info-staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "info-staging.plist"; sourceTree = "<group>"; };
 		7DA9A1172195E2960002AD87 /* Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-dev.plist"; sourceTree = "<group>"; };
@@ -198,6 +230,9 @@
 		7DC0A56C219FDC1C0057A3D1 /* SDApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDApiClient.swift; sourceTree = "<group>"; };
 		7DC0A571219FDF280057A3D1 /* UserParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserParam.swift; sourceTree = "<group>"; };
 		7DC0A57C219FEC600057A3D1 /* HogeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogeViewModel.swift; sourceTree = "<group>"; };
+		7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonsiloInfoCell.swift; sourceTree = "<group>"; };
+		7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KonsiloInfoCell.xib; sourceTree = "<group>"; };
+		7DEE84A9221B0533000098BF /* konsilo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = konsilo.html; sourceTree = "<group>"; };
 		7DF8849A21D6561C00813708 /* SDPushFadeSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDPushFadeSegue.swift; sourceTree = "<group>"; };
 		7DF8849B21D6561C00813708 /* SDPresentSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDPresentSegue.swift; sourceTree = "<group>"; };
 		A88108EF4900FA0B5529BD40 /* Pods_SagxaDormo_staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SagxaDormo_staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57454FAFFB07788F7BCB273D /* Pods_SagxaDormo.framework in Frameworks */,
-				61D6BB8D657E5646B433FBBC /* Pods_SagxaDormo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +301,7 @@
 				7D2E42C1218E16CC006B1C3F /* Login.storyboard */,
 				7D2E429F218E0385006B1C3F /* LaunchScreen.storyboard */,
 				7D2E42A1218E0385006B1C3F /* Main.storyboard */,
+				7D82B273221851EE0057AE2E /* Preferoj.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -297,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2E42B9218E0DBC006B1C3F /* SDKonsiloViewController.swift */,
+				7D11DD88221999FE002CAEB6 /* SDSanoTelefonoViewController.swift */,
 			);
 			path = Konsilo;
 			sourceTree = "<group>";
@@ -311,6 +347,7 @@
 		7D4B0799216B8D2900D19D1A /* Preferoj */ = {
 			isa = PBXGroup;
 			children = (
+				7D82B277221853650057AE2E /* SDPreferojViewController.swift */,
 			);
 			path = Preferoj;
 			sourceTree = "<group>";
@@ -361,6 +398,7 @@
 		7D4B079F216B8D2900D19D1A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7DEE84A0221AEFD2000098BF /* Cell */,
 				7D4B07B8216B93EA00D19D1A /* View */,
 				7D4B07A0216B8D2900D19D1A /* ViewModel */,
 				7D4B07A1216B8D2900D19D1A /* Label */,
@@ -423,6 +461,7 @@
 		7D4B07A6216B8D2900D19D1A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7D191130221C52E9004134CA /* dormo.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -430,6 +469,9 @@
 		7D4B07A7216B8D2900D19D1A /* Html */ = {
 			isa = PBXGroup;
 			children = (
+				7DEE84A9221B0533000098BF /* konsilo.html */,
+				7D11DD8C2219A79C002CAEB6 /* web1.html */,
+				7D11DD8D2219A79C002CAEB6 /* web2.html */,
 				7D0B9980218EECD8003738F7 /* error_page.html */,
 			);
 			path = Html;
@@ -446,8 +488,8 @@
 		7D4B07B1216B902D00D19D1A /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
+				7D82B26F221834AB0057AE2E /* SDUserDefault.swift */,
 				7D4B07C2216B94D600D19D1A /* SDConstantEnums.swift */,
-				7D4B07C1216B94D600D19D1A /* SDLocaleUtil.swift */,
 				7D4B07B6216B90FC00D19D1A /* R.generated.swift */,
 				7D4B07B2216B902D00D19D1A /* String+Regexp+Format+Size.swift */,
 				7D4B07B3216B902D00D19D1A /* Date+Misc.swift */,
@@ -513,6 +555,15 @@
 				7DC0A564219FDB5E0057A3D1 /* SDApiCore.swift */,
 			);
 			path = SDApi;
+			sourceTree = "<group>";
+		};
+		7DEE84A0221AEFD2000098BF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7DEE84A1221AEFFF000098BF /* KonsiloInfoCell.swift */,
+				7DEE84A2221AEFFF000098BF /* KonsiloInfoCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,7 +636,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "com.venuso-janne";
 				TargetAttributes = {
 					7D507E57216B8B9E00AFC535 = {
@@ -620,15 +671,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA9A1182195E2970002AD87 /* info-staging.plist in Resources */,
+				7DEE84A8221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */,
 				7D0B9981218EECD8003738F7 /* error_page.html in Resources */,
+				7DEE84AC221B0533000098BF /* konsilo.html in Resources */,
 				7DA9A1192195E2970002AD87 /* Info-dev.plist in Resources */,
 				7D2E42A4218E0385006B1C3F /* Main.storyboard in Resources */,
 				7D507E63216B8B9F00AFC535 /* Assets.xcassets in Resources */,
 				7D2E42C5218E16CC006B1C3F /* Login.storyboard in Resources */,
 				7D0B997C218EE184003738F7 /* locale-misc.strings in Resources */,
+				7D191133221C52E9004134CA /* dormo.jpg in Resources */,
 				7D2E42A3218E0385006B1C3F /* LaunchScreen.storyboard in Resources */,
+				7D82B276221851EE0057AE2E /* Preferoj.storyboard in Resources */,
 				7D2E42C4218E16CC006B1C3F /* Konsilo.storyboard in Resources */,
+				7D11DD932219A79D002CAEB6 /* web2.html in Resources */,
 				7D2E42C3218E16CC006B1C3F /* History.storyboard in Resources */,
+				7D11DD902219A79D002CAEB6 /* web1.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,11 +696,17 @@
 				7D7387082195DB4E00347597 /* error_page.html in Resources */,
 				7D7387092195DB4E00347597 /* Main.storyboard in Resources */,
 				7D73870A2195DB4E00347597 /* Assets.xcassets in Resources */,
+				7D82B274221851EE0057AE2E /* Preferoj.storyboard in Resources */,
 				7D73870B2195DB4E00347597 /* Login.storyboard in Resources */,
 				7D73870C2195DB4E00347597 /* locale-misc.strings in Resources */,
+				7DEE84AA221B0533000098BF /* konsilo.html in Resources */,
 				7D73870D2195DB4E00347597 /* LaunchScreen.storyboard in Resources */,
+				7DEE84A6221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */,
+				7D11DD912219A79D002CAEB6 /* web2.html in Resources */,
 				7D73870E2195DB4E00347597 /* Konsilo.storyboard in Resources */,
 				7D73870F2195DB4E00347597 /* History.storyboard in Resources */,
+				7D11DD8E2219A79D002CAEB6 /* web1.html in Resources */,
+				7D191131221C52E9004134CA /* dormo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,11 +717,17 @@
 				7D7387362195DB5C00347597 /* error_page.html in Resources */,
 				7D7387372195DB5C00347597 /* Main.storyboard in Resources */,
 				7D7387382195DB5C00347597 /* Assets.xcassets in Resources */,
+				7D82B275221851EE0057AE2E /* Preferoj.storyboard in Resources */,
 				7D7387392195DB5C00347597 /* Login.storyboard in Resources */,
 				7D73873A2195DB5C00347597 /* locale-misc.strings in Resources */,
+				7DEE84AB221B0533000098BF /* konsilo.html in Resources */,
 				7D73873B2195DB5C00347597 /* LaunchScreen.storyboard in Resources */,
+				7DEE84A7221AEFFF000098BF /* KonsiloInfoCell.xib in Resources */,
+				7D11DD922219A79D002CAEB6 /* web2.html in Resources */,
 				7D73873C2195DB5C00347597 /* Konsilo.storyboard in Resources */,
 				7D73873D2195DB5C00347597 /* History.storyboard in Resources */,
+				7D11DD8F2219A79D002CAEB6 /* web1.html in Resources */,
+				7D191132221C52E9004134CA /* dormo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -844,7 +913,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF884A121D6561C00813708 /* SDPresentSegue.swift in Sources */,
-				7D4B07C3216B94D600D19D1A /* SDLocaleUtil.swift in Sources */,
 				7D2E42BA218E0DBC006B1C3F /* SDKonsiloViewController.swift in Sources */,
 				7D1CB735218EF1730058FBCA /* UIScrollView+ext.swift in Sources */,
 				7D4B07C0216B93EB00D19D1A /* UIView+ext.swift in Sources */,
@@ -856,6 +924,7 @@
 				7D4B07BE216B93EB00D19D1A /* UIActivityIndicatorView+ext.swift in Sources */,
 				7D2E42BC218E0DDE006B1C3F /* SDHistorioViewController.swift in Sources */,
 				7DA4362D2199BB6700D15516 /* SDSplashScreenViewController.swift in Sources */,
+				7D82B27A221853650057AE2E /* SDPreferojViewController.swift in Sources */,
 				7D2E42AA218E04E7006B1C3F /* SDImportantMattersViewController.swift in Sources */,
 				7D4B07BD216B93EB00D19D1A /* UIImage+QRCode.swift in Sources */,
 				7DC0A578219FDF280057A3D1 /* UserParam.swift in Sources */,
@@ -864,9 +933,12 @@
 				7DF8849E21D6561C00813708 /* SDPushFadeSegue.swift in Sources */,
 				7D4B07B5216B902D00D19D1A /* Date+Misc.swift in Sources */,
 				7D4B07C4216B94D600D19D1A /* SDConstantEnums.swift in Sources */,
+				7DEE84A5221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */,
 				7D4B07B7216B90FC00D19D1A /* R.generated.swift in Sources */,
 				7D2E42C7218E18C7006B1C3F /* SDUsageItemsViewController.swift in Sources */,
 				7D2E42B4218E0712006B1C3F /* SDProfiloRedaktiloViewController.swift in Sources */,
+				7D11DD8B221999FE002CAEB6 /* SDSanoTelefonoViewController.swift in Sources */,
+				7D82B272221834AC0057AE2E /* SDUserDefault.swift in Sources */,
 				7D2F325621F9F79F0062B78E /* FooViewModel.swift in Sources */,
 				7DC0A56B219FDBAF0057A3D1 /* User.swift in Sources */,
 				7D4B07AD216B8DBF00D19D1A /* SDViewController.swift in Sources */,
@@ -885,7 +957,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF8849F21D6561C00813708 /* SDPresentSegue.swift in Sources */,
-				7D7386EC2195DB4E00347597 /* SDLocaleUtil.swift in Sources */,
 				7D7386ED2195DB4E00347597 /* SDKonsiloViewController.swift in Sources */,
 				7D7386EE2195DB4E00347597 /* UIScrollView+ext.swift in Sources */,
 				7D7386EF2195DB4E00347597 /* UIView+ext.swift in Sources */,
@@ -897,6 +968,7 @@
 				7D7386F42195DB4E00347597 /* UIActivityIndicatorView+ext.swift in Sources */,
 				7D7386F52195DB4E00347597 /* SDHistorioViewController.swift in Sources */,
 				7DA4362B2199BB6700D15516 /* SDSplashScreenViewController.swift in Sources */,
+				7D82B278221853650057AE2E /* SDPreferojViewController.swift in Sources */,
 				7D7386F62195DB4E00347597 /* SDImportantMattersViewController.swift in Sources */,
 				7D7386F72195DB4E00347597 /* UIImage+QRCode.swift in Sources */,
 				7DC0A576219FDF280057A3D1 /* UserParam.swift in Sources */,
@@ -905,9 +977,12 @@
 				7DF8849C21D6561C00813708 /* SDPushFadeSegue.swift in Sources */,
 				7D7386FA2195DB4E00347597 /* Date+Misc.swift in Sources */,
 				7D7386FB2195DB4E00347597 /* SDConstantEnums.swift in Sources */,
+				7DEE84A3221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */,
 				7D7386FC2195DB4E00347597 /* R.generated.swift in Sources */,
 				7D7386FD2195DB4E00347597 /* SDUsageItemsViewController.swift in Sources */,
 				7D7386FE2195DB4E00347597 /* SDProfiloRedaktiloViewController.swift in Sources */,
+				7D11DD89221999FE002CAEB6 /* SDSanoTelefonoViewController.swift in Sources */,
+				7D82B270221834AC0057AE2E /* SDUserDefault.swift in Sources */,
 				7D2F325421F9F79F0062B78E /* FooViewModel.swift in Sources */,
 				7DC0A569219FDBAF0057A3D1 /* User.swift in Sources */,
 				7D7386FF2195DB4E00347597 /* SDViewController.swift in Sources */,
@@ -926,7 +1001,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF884A021D6561C00813708 /* SDPresentSegue.swift in Sources */,
-				7D73871A2195DB5C00347597 /* SDLocaleUtil.swift in Sources */,
 				7D73871B2195DB5C00347597 /* SDKonsiloViewController.swift in Sources */,
 				7D73871C2195DB5C00347597 /* UIScrollView+ext.swift in Sources */,
 				7D73871D2195DB5C00347597 /* UIView+ext.swift in Sources */,
@@ -938,6 +1012,7 @@
 				7D7387222195DB5C00347597 /* UIActivityIndicatorView+ext.swift in Sources */,
 				7D7387232195DB5C00347597 /* SDHistorioViewController.swift in Sources */,
 				7DA4362C2199BB6700D15516 /* SDSplashScreenViewController.swift in Sources */,
+				7D82B279221853650057AE2E /* SDPreferojViewController.swift in Sources */,
 				7D7387242195DB5C00347597 /* SDImportantMattersViewController.swift in Sources */,
 				7D7387252195DB5C00347597 /* UIImage+QRCode.swift in Sources */,
 				7DC0A577219FDF280057A3D1 /* UserParam.swift in Sources */,
@@ -946,9 +1021,12 @@
 				7DF8849D21D6561C00813708 /* SDPushFadeSegue.swift in Sources */,
 				7D7387282195DB5C00347597 /* Date+Misc.swift in Sources */,
 				7D7387292195DB5C00347597 /* SDConstantEnums.swift in Sources */,
+				7DEE84A4221AEFFF000098BF /* KonsiloInfoCell.swift in Sources */,
 				7D73872A2195DB5C00347597 /* R.generated.swift in Sources */,
 				7D73872B2195DB5C00347597 /* SDUsageItemsViewController.swift in Sources */,
 				7D73872C2195DB5C00347597 /* SDProfiloRedaktiloViewController.swift in Sources */,
+				7D11DD8A221999FE002CAEB6 /* SDSanoTelefonoViewController.swift in Sources */,
+				7D82B271221834AC0057AE2E /* SDUserDefault.swift in Sources */,
 				7D2F325521F9F79F0062B78E /* FooViewModel.swift in Sources */,
 				7DC0A56A219FDBAF0057A3D1 /* User.swift in Sources */,
 				7D73872D2195DB5C00347597 /* SDViewController.swift in Sources */,

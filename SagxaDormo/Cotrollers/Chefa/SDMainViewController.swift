@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class SDMainViewController: SDViewController {
-    private let disposeBag = DisposeBag()
+    private let _disposeBag = DisposeBag()
     
     var viewModel: HogeViewModel!
     
@@ -19,19 +19,24 @@ class SDMainViewController: SDViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //self.startLoginVC()
-        
-
-        viewModel = HogeViewModel()
-        
-        viewModel.helloWorldSubject
-            .subscribe(onNext: { [weak self] value in
-                print("value = \(value)")
-            })
-            .disposed(by: disposeBag)
-        
-        viewModel.updateItem()
+        SDViewController.mainVC = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
     }
 }
+/*
+ 
+ viewModel = HogeViewModel()
+ 
+ viewModel.helloWorldSubject
+ .subscribe(onNext: { [weak self] value in
+ print("value = \(value)")
+ })
+ .disposed(by: disposeBag)
+ 
+ viewModel.updateItem()
+ */
 
 

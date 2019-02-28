@@ -17,14 +17,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg4-Vb-WHu">
+                                <rect key="frame" x="89" y="292" width="197" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xgc-NQ-bGV"/>
+                    <navigationItem key="navigationItem" id="xgc-NQ-bGV">
+                        <barButtonItem key="leftBarButtonItem" title="≡" id="KCQ-gZ-U5e">
+                            <connections>
+                                <segue destination="RJG-Jm-3me" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="88U-Ru-wQC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="9"/>
+            <point key="canvasLocation" x="1760.8" y="8.5457271364317844"/>
+        </scene>
+        <!--Preferoj-->
+        <scene sceneID="VQG-lS-pZi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Preferoj" id="RJG-Jm-3me" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekJ-Rz-eQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2233" y="-308"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hdp-b3-sT0">
@@ -70,7 +93,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D31-0F-xjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.2" y="685.90704647676171"/>
+            <point key="canvasLocation" x="1970.4000000000001" y="685.90704647676171"/>
         </scene>
         <!--History-->
         <scene sceneID="xKU-PD-A4s">
@@ -90,7 +113,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ay-2X-l9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="1308"/>
+            <point key="canvasLocation" x="1761" y="1320"/>
         </scene>
         <!--Splash Screen View Controller-->
         <scene sceneID="3Io-ap-fwR">
@@ -100,21 +123,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vE-FJ-fsh">
-                                <rect key="frame" x="69" y="161" width="236" height="279"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dormo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9vE-FJ-fsh">
+                                <rect key="frame" x="39" y="194" width="297" height="279"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9vE-FJ-fsh" firstAttribute="centerX" secondItem="Rqz-Et-r0l" secondAttribute="centerX" id="Ffp-uk-jjX"/>
+                            <constraint firstItem="9vE-FJ-fsh" firstAttribute="centerY" secondItem="Rqz-Et-r0l" secondAttribute="centerY" id="k2v-TY-uiB"/>
+                            <constraint firstItem="9vE-FJ-fsh" firstAttribute="top" secondItem="NNC-HP-gNo" secondAttribute="top" constant="174" id="pD7-S4-dLS"/>
+                            <constraint firstItem="9vE-FJ-fsh" firstAttribute="leading" secondItem="NNC-HP-gNo" secondAttribute="leading" constant="39" id="y8H-O7-jjY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NNC-HP-gNo"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vOr-6i-7kI"/>
                     <connections>
                         <segue destination="3zc-Ko-5RO" kind="show" identifier="homeSegue" id="8s5-pj-LhT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxt-mz-Ibo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-914.39999999999998" y="685.90704647676171"/>
+            <point key="canvasLocation" x="24.800000000000001" y="685.90704647676171"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fBS-Ra-UrS">
@@ -128,13 +157,16 @@
                     </tabBar>
                     <connections>
                         <segue destination="1Qw-yg-exe" kind="relationship" relationship="viewControllers" id="E6F-j4-5S8"/>
-                        <segue destination="L4v-4a-DLJ" kind="relationship" relationship="viewControllers" id="ttb-Ya-6KM"/>
-                        <segue destination="zMF-FA-DvF" kind="relationship" relationship="viewControllers" id="bOL-LB-rgd"/>
+                        <segue destination="zMF-FA-DvF" kind="relationship" relationship="viewControllers" id="wZO-7S-dQB"/>
+                        <segue destination="L4v-4a-DLJ" kind="relationship" relationship="viewControllers" id="3PS-R1-lWb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyy-Su-Cwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="685.90704647676171"/>
+            <point key="canvasLocation" x="1031.2" y="685.90704647676171"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dormo.jpg" width="232" height="217"/>
+    </resources>
 </document>

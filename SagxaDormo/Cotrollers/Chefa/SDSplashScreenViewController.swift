@@ -18,8 +18,14 @@ class SDSplashScreenViewController: SDViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //self.performSegue(withIdentifier: R.segue.sdSplashScreenViewController.homeSegue.identifier, sender: self)
-        SDUserManager.shared.startLoginVC(sender: self)
+        if SDUserDefault.shared.currentLoadState == .main {
+           ( self.view.subviews[0] as! UIImageView).isHidden = true
+            if SDViewController.mainVC == nil {
+                self.performSegue(withIdentifier: R.segue.sdSplashScreenViewController.homeSegue.identifier, sender: self)
+            }
+        } else {
+            SDUserManager.shared.startLoginVC(sender: self)
+        }
     }
 
     /*

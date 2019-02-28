@@ -17,9 +17,8 @@ class SDUsageItemsViewController: SDWebViewController {
         didSet {
             self.antaûeButton.rx.tap
             .subscribe(onNext: { [unowned self] in
-                self.navigationController?.dismiss(animated: true, completion: {
-                    
-                })
+                SDUserDefault.shared.currentLoadState = .login
+                self.navigationController?.popToViewController(SDViewController.loginVC!, animated: false)
                 
             })
             .disposed(by: self._disposeBag)
