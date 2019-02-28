@@ -18,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         // Check if launched from notification
 
+//        self.window?.rootViewController = {() -> UINavigationController in
+//            let nav: UINavigationController = UINavigationController()
+//            nav.navigationBar.isHidden = true
+//            nav.pushViewController(R.storyboard.main().instantiateInitialViewController()!, animated: true)
+//            return nav
+//        }()
+        print("--------")
         return true
     }
 

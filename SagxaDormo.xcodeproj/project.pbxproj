@@ -10,7 +10,6 @@
 		0564ED3A1B4E2CDBDA5C3D2B /* Pods_SagxaDormo_staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88108EF4900FA0B5529BD40 /* Pods_SagxaDormo_staging.framework */; };
 		3B1D023DE12BAC4B1BE15D27 /* Pods_SagxaDormo_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A84BAB365B0AF4C9A28E118 /* Pods_SagxaDormo_dev.framework */; };
 		57454FAFFB07788F7BCB273D /* Pods_SagxaDormo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC9D333AFD206220D7CC86D /* Pods_SagxaDormo.framework */; };
-		61D6BB8D657E5646B433FBBC /* Pods_SagxaDormo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC9D333AFD206220D7CC86D /* Pods_SagxaDormo.framework */; };
 		7D0B997C218EE184003738F7 /* locale-misc.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B997E218EE184003738F7 /* locale-misc.strings */; };
 		7D0B9981218EECD8003738F7 /* error_page.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D0B9980218EECD8003738F7 /* error_page.html */; };
 		7D11DD89221999FE002CAEB6 /* SDSanoTelefonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11DD88221999FE002CAEB6 /* SDSanoTelefonoViewController.swift */; };
@@ -22,6 +21,9 @@
 		7D11DD912219A79D002CAEB6 /* web2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8D2219A79C002CAEB6 /* web2.html */; };
 		7D11DD922219A79D002CAEB6 /* web2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8D2219A79C002CAEB6 /* web2.html */; };
 		7D11DD932219A79D002CAEB6 /* web2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D11DD8D2219A79C002CAEB6 /* web2.html */; };
+		7D191131221C52E9004134CA /* dormo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D191130221C52E9004134CA /* dormo.jpg */; };
+		7D191132221C52E9004134CA /* dormo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D191130221C52E9004134CA /* dormo.jpg */; };
+		7D191133221C52E9004134CA /* dormo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D191130221C52E9004134CA /* dormo.jpg */; };
 		7D1CB735218EF1730058FBCA /* UIScrollView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB734218EF1730058FBCA /* UIScrollView+ext.swift */; };
 		7D2E42A3218E0385006B1C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E429F218E0385006B1C3F /* LaunchScreen.storyboard */; };
 		7D2E42A4218E0385006B1C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42A1218E0385006B1C3F /* Main.storyboard */; };
@@ -181,6 +183,7 @@
 		7D11DD88221999FE002CAEB6 /* SDSanoTelefonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSanoTelefonoViewController.swift; sourceTree = "<group>"; };
 		7D11DD8C2219A79C002CAEB6 /* web1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = web1.html; sourceTree = "<group>"; };
 		7D11DD8D2219A79C002CAEB6 /* web2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = web2.html; sourceTree = "<group>"; };
+		7D191130221C52E9004134CA /* dormo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dormo.jpg; sourceTree = "<group>"; };
 		7D1CB734218EF1730058FBCA /* UIScrollView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ext.swift"; sourceTree = "<group>"; };
 		7D2E42A0218E0385006B1C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2E42A2218E0385006B1C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -245,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57454FAFFB07788F7BCB273D /* Pods_SagxaDormo.framework in Frameworks */,
-				61D6BB8D657E5646B433FBBC /* Pods_SagxaDormo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +461,7 @@
 		7D4B07A6216B8D2900D19D1A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7D191130221C52E9004134CA /* dormo.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -633,7 +636,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "com.venuso-janne";
 				TargetAttributes = {
 					7D507E57216B8B9E00AFC535 = {
@@ -676,6 +679,7 @@
 				7D507E63216B8B9F00AFC535 /* Assets.xcassets in Resources */,
 				7D2E42C5218E16CC006B1C3F /* Login.storyboard in Resources */,
 				7D0B997C218EE184003738F7 /* locale-misc.strings in Resources */,
+				7D191133221C52E9004134CA /* dormo.jpg in Resources */,
 				7D2E42A3218E0385006B1C3F /* LaunchScreen.storyboard in Resources */,
 				7D82B276221851EE0057AE2E /* Preferoj.storyboard in Resources */,
 				7D2E42C4218E16CC006B1C3F /* Konsilo.storyboard in Resources */,
@@ -702,6 +706,7 @@
 				7D73870E2195DB4E00347597 /* Konsilo.storyboard in Resources */,
 				7D73870F2195DB4E00347597 /* History.storyboard in Resources */,
 				7D11DD8E2219A79D002CAEB6 /* web1.html in Resources */,
+				7D191131221C52E9004134CA /* dormo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +727,7 @@
 				7D73873C2195DB5C00347597 /* Konsilo.storyboard in Resources */,
 				7D73873D2195DB5C00347597 /* History.storyboard in Resources */,
 				7D11DD8F2219A79D002CAEB6 /* web1.html in Resources */,
+				7D191132221C52E9004134CA /* dormo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

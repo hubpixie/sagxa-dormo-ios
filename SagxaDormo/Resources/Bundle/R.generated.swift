@@ -21,8 +21,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 4 files.
+  /// This `R.file` struct is generated, and contains static references to 5 files.
   struct file {
+    /// Resource file `dormo.jpg`.
+    static let dormoJpg = Rswift.FileResource(bundle: R.hostingBundle, name: "dormo", pathExtension: "jpg")
     /// Resource file `error_page.html`.
     static let error_pageHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "error_page", pathExtension: "html")
     /// Resource file `konsilo.html`.
@@ -31,6 +33,12 @@ struct R: Rswift.Validatable {
     static let web1Html = Rswift.FileResource(bundle: R.hostingBundle, name: "web1", pathExtension: "html")
     /// Resource file `web2.html`.
     static let web2Html = Rswift.FileResource(bundle: R.hostingBundle, name: "web2", pathExtension: "html")
+    
+    /// `bundle.url(forResource: "dormo", withExtension: "jpg")`
+    static func dormoJpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.dormoJpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "error_page", withExtension: "html")`
     static func error_pageHtml(_: Void = ()) -> Foundation.URL? {
@@ -64,8 +72,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
+    /// Image `dormo.jpg`.
+    static let dormoJpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "dormo.jpg")
+    
+    /// `UIImage(named: "dormo.jpg", bundle: ..., traitCollection: ...)`
+    static func dormoJpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.dormoJpg, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
@@ -735,6 +751,7 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "dormo.jpg") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'dormo.jpg' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().webController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'webController' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
       }
       
