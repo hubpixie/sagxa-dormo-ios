@@ -123,12 +123,12 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `SDSplashScreenViewController`, and contains static references to 1 segues.
     struct sdSplashScreenViewController {
       /// Segue identifier `homeSegue`.
-      static let homeSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SDSplashScreenViewController, UIKit.UITabBarController> = Rswift.StoryboardSegueIdentifier(identifier: "homeSegue")
+      static let homeSegue: Rswift.StoryboardSegueIdentifier<SDPresentSegue, SDSplashScreenViewController, UIKit.UITabBarController> = Rswift.StoryboardSegueIdentifier(identifier: "homeSegue")
       
       /// Optionally returns a typed version of segue `homeSegue`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func homeSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SDSplashScreenViewController, UIKit.UITabBarController>? {
+      static func homeSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<SDPresentSegue, SDSplashScreenViewController, UIKit.UITabBarController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.sdSplashScreenViewController.homeSegue, segue: segue)
       }
       
@@ -725,15 +725,27 @@ struct _R: Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
+      let importantVC = StoryboardViewControllerResource<SDImportantMattersViewController>(identifier: "importantVC")
       let name = "Login"
       let profiloRedaktiloVC = StoryboardViewControllerResource<SDProfiloRedaktiloViewController>(identifier: "ProfiloRedaktiloVC")
+      let targetSensorVC = StoryboardViewControllerResource<SDTargetSensorSelectViewController>(identifier: "targetSensorVC")
+      
+      func importantVC(_: Void = ()) -> SDImportantMattersViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: importantVC)
+      }
       
       func profiloRedaktiloVC(_: Void = ()) -> SDProfiloRedaktiloViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: profiloRedaktiloVC)
       }
       
+      func targetSensorVC(_: Void = ()) -> SDTargetSensorSelectViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: targetSensorVC)
+      }
+      
       static func validate() throws {
         if _R.storyboard.login().profiloRedaktiloVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'profiloRedaktiloVC' could not be loaded from storyboard 'Login' as 'SDProfiloRedaktiloViewController'.") }
+        if _R.storyboard.login().targetSensorVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'targetSensorVC' could not be loaded from storyboard 'Login' as 'SDTargetSensorSelectViewController'.") }
+        if _R.storyboard.login().importantVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'importantVC' could not be loaded from storyboard 'Login' as 'SDImportantMattersViewController'.") }
       }
       
       fileprivate init() {}

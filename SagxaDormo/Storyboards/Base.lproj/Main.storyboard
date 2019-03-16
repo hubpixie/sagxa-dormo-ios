@@ -138,7 +138,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vOr-6i-7kI"/>
                     <connections>
-                        <segue destination="3zc-Ko-5RO" kind="show" identifier="homeSegue" id="8s5-pj-LhT"/>
+                        <segue destination="3zc-Ko-5RO" kind="presentation" identifier="homeSegue" customClass="SDPresentSegue" customModule="SagxaDormo" customModuleProvider="target" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="8s5-pj-LhT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxt-mz-Ibo" userLabel="First Responder" sceneMemberID="firstResponder"/>

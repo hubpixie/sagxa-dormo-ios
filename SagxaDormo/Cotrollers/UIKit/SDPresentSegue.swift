@@ -9,7 +9,7 @@
 import UIKit
 
 class SDPresentSegue: UIStoryboardSegue {
-    var extraHandler: (()->())?
+    var extraHandler: (()->Void)?
     override func perform() {
 //        UIView.transition(
 //            with: (source.navigationController?.view)!,
@@ -23,9 +23,13 @@ class SDPresentSegue: UIStoryboardSegue {
 //                }
 //        },
 //            completion: nil)
-        if let extraHandler = self.extraHandler {
-            extraHandler()
+        self.extraHandler?()
+        DispatchQueue.main.async {
+            self.extraHandler = nil
         }
     }
     
+//    func presentWithBlock(completionHandler: @escaping (()->Void)) {
+//        self.extraHandler = completionHandler
+//    }
 }

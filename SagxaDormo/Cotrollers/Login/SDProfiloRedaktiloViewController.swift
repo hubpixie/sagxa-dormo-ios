@@ -16,7 +16,12 @@ class SDProfiloRedaktiloViewController: SDViewController {
     @IBOutlet private weak var nicknameTextField: UITextField!
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwdTextField: UITextField!
-    
+    @IBOutlet private weak var zipcodeTextField: UITextField! {
+        didSet {
+            self.addDoneButtonOnKeyboard(textField: self.zipcodeTextField)
+        }
+    }
+
     @IBOutlet private weak var registerButton: UIButton! {
         didSet {
             self.registerButton.rx.tap.bind {
@@ -106,5 +111,26 @@ class SDProfiloRedaktiloViewController: SDViewController {
 
 
 extension SDProfiloRedaktiloViewController {
+    func addDoneButtonOnKeyboard(textField: UITextField)
+    {
+        let doneToolbar: UIToolbar = UIToolbar()
+       // doneToolbar.barStyle = .default
+        
+        let flexSpaceItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let doneItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(self.doneButtonAction))
+        doneItem.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12.0)], for: .normal)
+        let fixedSpaceItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: self, action: nil)
 
+        let items = [flexSpaceItem, doneItem, fixedSpaceItem]
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        textField.inputAccessoryView = doneToolbar
+    }
+    
+    @objc func doneButtonAction()
+    {
+        self.zipcodeTextField.resignFirstResponder()
+    }
 }
+

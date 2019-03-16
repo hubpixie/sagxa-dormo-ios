@@ -39,7 +39,7 @@
         <!--Important Matters View Controller-->
         <scene sceneID="R6Y-hb-9Tb">
             <objects>
-                <viewController id="BeY-qT-N12" customClass="SDImportantMattersViewController" customModule="SagxaDormo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="importantVC" id="BeY-qT-N12" customClass="SDImportantMattersViewController" customModule="SagxaDormo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wuj-aw-LGh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
         <!--Target Sensor Select View Controller-->
         <scene sceneID="BkM-Gu-1kM">
             <objects>
-                <viewController id="Usf-yV-MJK" customClass="SDTargetSensorSelectViewController" customModule="SagxaDormo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="targetSensorVC" id="Usf-yV-MJK" customClass="SDTargetSensorSelectViewController" customModule="SagxaDormo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7y-Ol-ebX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,7 +203,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2d-6f-inb">
-                                <rect key="frame" x="87" y="446" width="200" height="33"/>
+                                <rect key="frame" x="87" y="492" width="200" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="登録"/>
@@ -213,6 +213,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R9T-1A-lkJ">
+                                <rect key="frame" x="61" y="399" width="253" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" textContentType="postal-code"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 郵便番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sai-SY-2uc">
+                                <rect key="frame" x="61" y="373" width="132" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ru7-dh-gxP"/>
@@ -224,6 +238,7 @@
                         <outlet property="nicknameTextField" destination="bgb-yO-sZh" id="yN5-lt-dvv"/>
                         <outlet property="passwdTextField" destination="PDL-pl-3ZO" id="B3t-k0-SCJ"/>
                         <outlet property="registerButton" destination="J2d-6f-inb" id="pdu-WS-mu7"/>
+                        <outlet property="zipcodeTextField" destination="R9T-1A-lkJ" id="Rzt-EX-8lG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2T-oD-y0O" userLabel="First Responder" sceneMemberID="firstResponder"/>

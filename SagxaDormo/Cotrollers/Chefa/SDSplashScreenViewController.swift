@@ -28,15 +28,24 @@ class SDSplashScreenViewController: SDViewController {
         }
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue is SDPresentSegue, let mySegue: SDPresentSegue = segue as? SDPresentSegue {
+            mySegue.extraHandler = {[weak self]() in
+                self?.present(segue.destination, animated: true, completion: nil)
+            }
+//            mySegue.presentWithBlock() {[weak self]() in
+//                self?.present(segue.destination, animated: true, completion: nil)
+//            }
+        }
+        super.prepare(for: segue, sender: sender)
     }
-    */
+    
 
 
 }

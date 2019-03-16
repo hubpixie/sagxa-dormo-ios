@@ -18,9 +18,9 @@ class SDViewController: UIViewController {
     //カレント認証プロバイダー
     static var currentLoginProvider: SDUserManager.LoginProvider = .none
     
-    static var splashVC: SDSplashScreenViewController?
-    static var mainVC: SDMainViewController?
-    static var loginVC: SDLoginViewController?
+    static weak var splashVC: SDSplashScreenViewController?
+    static weak var mainVC: SDMainViewController?
+    static weak var loginVC: SDLoginViewController?
 
     var navigationBarBottomMargin: CGFloat  {
         var bottomMargin : CGFloat = 0

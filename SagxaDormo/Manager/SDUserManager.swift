@@ -32,6 +32,14 @@ class SDUserManager {
     func startLoginVC(sender: SDViewController) {
         if let vc: UINavigationController = R.storyboard.login().instantiateInitialViewController() as? UINavigationController {
             vc.navigationBar.isHidden = true
+            switch SDUserDefault.shared.currentLoadState! {
+            case .usageItems:
+                vc.viewControllers = [R.storyboard.login.importantVC()!]
+            case .selectSensor:
+                vc.viewControllers = [R.storyboard.login.targetSensorVC()!]
+            default:
+                break
+            }
             sender.present(vc, animated: true, completion: nil)
         }
         

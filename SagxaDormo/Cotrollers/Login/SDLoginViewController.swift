@@ -15,6 +15,7 @@ class SDLoginViewController: SDViewController {
 
         // Do any additional setup after loading the view.
         SDViewController.loginVC = self
+        SDUserDefault.shared.currentLoadState = .login
     }
     
 

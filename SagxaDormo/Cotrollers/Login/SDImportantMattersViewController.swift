@@ -14,6 +14,7 @@ class SDImportantMattersViewController: SDUsageItemsViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        SDUserDefault.shared.currentLoadState = .usageItems
     }
     
 
