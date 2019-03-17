@@ -121,6 +121,18 @@
 		7D73873B2195DB5C00347597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E429F218E0385006B1C3F /* LaunchScreen.storyboard */; };
 		7D73873C2195DB5C00347597 /* Konsilo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42BF218E16CB006B1C3F /* Konsilo.storyboard */; };
 		7D73873D2195DB5C00347597 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E42BD218E16CB006B1C3F /* History.storyboard */; };
+		7D804472223CD85F00FFEC34 /* SDCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804471223CD85F00FFEC34 /* SDCipher.swift */; };
+		7D804473223CD85F00FFEC34 /* SDCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804471223CD85F00FFEC34 /* SDCipher.swift */; };
+		7D804474223CD85F00FFEC34 /* SDCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804471223CD85F00FFEC34 /* SDCipher.swift */; };
+		7D804476223CF98800FFEC34 /* SDCipher2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804475223CF98700FFEC34 /* SDCipher2.swift */; };
+		7D804477223CF98800FFEC34 /* SDCipher2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804475223CF98700FFEC34 /* SDCipher2.swift */; };
+		7D804478223CF98800FFEC34 /* SDCipher2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804475223CF98700FFEC34 /* SDCipher2.swift */; };
+		7D80447A223D1CA900FFEC34 /* SDCipher3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804479223D1CA900FFEC34 /* SDCipher3.swift */; };
+		7D80447B223D1CA900FFEC34 /* SDCipher3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804479223D1CA900FFEC34 /* SDCipher3.swift */; };
+		7D80447C223D1CA900FFEC34 /* SDCipher3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D804479223D1CA900FFEC34 /* SDCipher3.swift */; };
+		7D80447E223D308900FFEC34 /* SDCipher4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D80447D223D308900FFEC34 /* SDCipher4.swift */; };
+		7D80447F223D308900FFEC34 /* SDCipher4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D80447D223D308900FFEC34 /* SDCipher4.swift */; };
+		7D804480223D308900FFEC34 /* SDCipher4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D80447D223D308900FFEC34 /* SDCipher4.swift */; };
 		7D82B270221834AC0057AE2E /* SDUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B26F221834AB0057AE2E /* SDUserDefault.swift */; };
 		7D82B271221834AC0057AE2E /* SDUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B26F221834AB0057AE2E /* SDUserDefault.swift */; };
 		7D82B272221834AC0057AE2E /* SDUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82B26F221834AB0057AE2E /* SDUserDefault.swift */; };
@@ -219,6 +231,10 @@
 		7D507E67216B8B9F00AFC535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D7387142195DB4E00347597 /* SagxaDormo-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SagxaDormo-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7387422195DB5C00347597 /* SagxaDormo-staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SagxaDormo-staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D804471223CD85F00FFEC34 /* SDCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCipher.swift; sourceTree = "<group>"; };
+		7D804475223CF98700FFEC34 /* SDCipher2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCipher2.swift; sourceTree = "<group>"; };
+		7D804479223D1CA900FFEC34 /* SDCipher3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCipher3.swift; sourceTree = "<group>"; };
+		7D80447D223D308900FFEC34 /* SDCipher4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCipher4.swift; sourceTree = "<group>"; };
 		7D82B26F221834AB0057AE2E /* SDUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDUserDefault.swift; sourceTree = "<group>"; };
 		7D82B273221851EE0057AE2E /* Preferoj.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferoj.storyboard; sourceTree = "<group>"; };
 		7D82B277221853650057AE2E /* SDPreferojViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPreferojViewController.swift; sourceTree = "<group>"; };
@@ -493,6 +509,10 @@
 				7D4B07B6216B90FC00D19D1A /* R.generated.swift */,
 				7D4B07B2216B902D00D19D1A /* String+Regexp+Format+Size.swift */,
 				7D4B07B3216B902D00D19D1A /* Date+Misc.swift */,
+				7D804471223CD85F00FFEC34 /* SDCipher.swift */,
+				7D804475223CF98700FFEC34 /* SDCipher2.swift */,
+				7D804479223D1CA900FFEC34 /* SDCipher3.swift */,
+				7D80447D223D308900FFEC34 /* SDCipher4.swift */,
 			);
 			path = Bundle;
 			sourceTree = "<group>";
@@ -912,12 +932,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D804480223D308900FFEC34 /* SDCipher4.swift in Sources */,
 				7DF884A121D6561C00813708 /* SDPresentSegue.swift in Sources */,
+				7D804474223CD85F00FFEC34 /* SDCipher.swift in Sources */,
 				7D2E42BA218E0DBC006B1C3F /* SDKonsiloViewController.swift in Sources */,
 				7D1CB735218EF1730058FBCA /* UIScrollView+ext.swift in Sources */,
 				7D4B07C0216B93EB00D19D1A /* UIView+ext.swift in Sources */,
 				7D4B07A9216B8D2900D19D1A /* SDMainViewController.swift in Sources */,
 				7D2E42AE218E0597006B1C3F /* SDUsageItemsTwoViewController.swift in Sources */,
+				7D80447C223D1CA900FFEC34 /* SDCipher3.swift in Sources */,
 				7D4B07BF216B93EB00D19D1A /* UIColor+ext.swift in Sources */,
 				7DC0A56F219FDC1C0057A3D1 /* SDApiClient.swift in Sources */,
 				7D2E42AC218E0574006B1C3F /* SDUsageItemsOneViewController.swift in Sources */,
@@ -946,6 +969,7 @@
 				7D507E5C216B8B9E00AFC535 /* AppDelegate.swift in Sources */,
 				7DC0A567219FDB5E0057A3D1 /* SDApiCore.swift in Sources */,
 				7DC0A57F219FEC600057A3D1 /* HogeViewModel.swift in Sources */,
+				7D804478223CF98800FFEC34 /* SDCipher2.swift in Sources */,
 				7D42915F2215BCF1005B5EE5 /* SDUserManager.swift in Sources */,
 				7D2E42B0218E05DD006B1C3F /* SDTargetSensorSelectViewController.swift in Sources */,
 				7D4B07AE216B8DBF00D19D1A /* SDWebViewController.swift in Sources */,
@@ -956,12 +980,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D80447E223D308900FFEC34 /* SDCipher4.swift in Sources */,
 				7DF8849F21D6561C00813708 /* SDPresentSegue.swift in Sources */,
+				7D804472223CD85F00FFEC34 /* SDCipher.swift in Sources */,
 				7D7386ED2195DB4E00347597 /* SDKonsiloViewController.swift in Sources */,
 				7D7386EE2195DB4E00347597 /* UIScrollView+ext.swift in Sources */,
 				7D7386EF2195DB4E00347597 /* UIView+ext.swift in Sources */,
 				7D7386F02195DB4E00347597 /* SDMainViewController.swift in Sources */,
 				7D7386F12195DB4E00347597 /* SDUsageItemsTwoViewController.swift in Sources */,
+				7D80447A223D1CA900FFEC34 /* SDCipher3.swift in Sources */,
 				7D7386F22195DB4E00347597 /* UIColor+ext.swift in Sources */,
 				7DC0A56D219FDC1C0057A3D1 /* SDApiClient.swift in Sources */,
 				7D7386F32195DB4E00347597 /* SDUsageItemsOneViewController.swift in Sources */,
@@ -990,6 +1017,7 @@
 				7D7387022195DB4E00347597 /* AppDelegate.swift in Sources */,
 				7DC0A565219FDB5E0057A3D1 /* SDApiCore.swift in Sources */,
 				7DC0A57D219FEC600057A3D1 /* HogeViewModel.swift in Sources */,
+				7D804476223CF98800FFEC34 /* SDCipher2.swift in Sources */,
 				7D42915D2215BCF1005B5EE5 /* SDUserManager.swift in Sources */,
 				7D7387032195DB4E00347597 /* SDTargetSensorSelectViewController.swift in Sources */,
 				7D7387042195DB4E00347597 /* SDWebViewController.swift in Sources */,
@@ -1000,12 +1028,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D80447F223D308900FFEC34 /* SDCipher4.swift in Sources */,
 				7DF884A021D6561C00813708 /* SDPresentSegue.swift in Sources */,
+				7D804473223CD85F00FFEC34 /* SDCipher.swift in Sources */,
 				7D73871B2195DB5C00347597 /* SDKonsiloViewController.swift in Sources */,
 				7D73871C2195DB5C00347597 /* UIScrollView+ext.swift in Sources */,
 				7D73871D2195DB5C00347597 /* UIView+ext.swift in Sources */,
 				7D73871E2195DB5C00347597 /* SDMainViewController.swift in Sources */,
 				7D73871F2195DB5C00347597 /* SDUsageItemsTwoViewController.swift in Sources */,
+				7D80447B223D1CA900FFEC34 /* SDCipher3.swift in Sources */,
 				7D7387202195DB5C00347597 /* UIColor+ext.swift in Sources */,
 				7DC0A56E219FDC1C0057A3D1 /* SDApiClient.swift in Sources */,
 				7D7387212195DB5C00347597 /* SDUsageItemsOneViewController.swift in Sources */,
@@ -1034,6 +1065,7 @@
 				7D7387302195DB5C00347597 /* AppDelegate.swift in Sources */,
 				7DC0A566219FDB5E0057A3D1 /* SDApiCore.swift in Sources */,
 				7DC0A57E219FEC600057A3D1 /* HogeViewModel.swift in Sources */,
+				7D804477223CF98800FFEC34 /* SDCipher2.swift in Sources */,
 				7D42915E2215BCF1005B5EE5 /* SDUserManager.swift in Sources */,
 				7D7387312195DB5C00347597 /* SDTargetSensorSelectViewController.swift in Sources */,
 				7D7387322195DB5C00347597 /* SDWebViewController.swift in Sources */,
