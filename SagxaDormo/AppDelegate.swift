@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            return nav
 //        }()
         print("--------")
+        let json: String = "{\"info_list\":[{\"nickname\":\"aaa\", \"email\":\"Suzuki@aaa.com\", \"password\":\"pass0001\"}, {\"nickname\":\"bbb\", \"email\":\"Tanaka@bbb.com\", \"password\":\"pass0001\"}]}"
+        let result = SDApiClient.decodeMyModel([User].self, from: json, keyString: "info_list")
+        print("User = \(result.decodableObj)")
         return true
     }
 

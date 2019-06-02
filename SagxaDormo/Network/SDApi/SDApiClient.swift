@@ -142,5 +142,28 @@ class SDApiClient: SwaggerClientAPI {
     }
     
 
+    
+    class func decodeMyModel<T>(_ type: T.Type, from jsonString: String?, keyString: String?) -> (decodableObj: T?, error: Error?) where T : Decodable {
+        var returnedDecodable: T? = nil
+        var returnedError: Error? = nil
+        let decoder: JSONDecoder = JSONDecoder()
+        do {
+            if let data: Data = jsonString?.data(using: .utf8) {
+                if let key = keyString {
+                    if let dic:[String: Any] = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                        let item = dic[key] {
+                        let buf: Data = try JSONSerialization.data(withJSONObject: item, options: [])
+                        returnedDecodable = try decoder.decode(type, from: buf)
+                    }
+                } else {
+                    returnedDecodable = try decoder.decode(type, from: data)
+                }
+            }
+        } catch {
+            returnedError = error
+        }
+        
+        return (returnedDecodable, returnedError)
+    }
 }
 

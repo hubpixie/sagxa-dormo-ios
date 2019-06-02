@@ -11,10 +11,26 @@ import RxSwift
 import RxCocoa
 
 class SDMainViewController: SDViewController {
-    private let _disposeBag = DisposeBag()
+    @IBOutlet weak var openHistorioButton: UIButton! {
+        didSet {
+            self.openHistorioButton.rx.tap
+                .subscribe(onNext: { _ in
+                    DispatchQueue.main.async {
+                        if let vc: SDHistorioViewController = R.storyboard.history.historioVC() {
+                            UIApplication.shared.keyWindow?.addSubview(vc.view)
+                            UIApplication.shared.keyWindow?.rootViewController?.addChild(vc)
+                            //self.present(vc, animated: false, completion: nil)
+                        }
+                    }
+                })
+                .disposed(by: self._disposeBag)
+            
+        }
+    }
     
     var viewModel: HogeViewModel!
-    
+    private let _disposeBag = DisposeBag()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

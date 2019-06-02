@@ -692,13 +692,23 @@ struct _R: Rswift.Validatable {
     static func validate() throws {
       try main.validate()
       try login.validate()
+      try history.validate()
     }
     
-    struct history: Rswift.StoryboardResourceWithInitialControllerType {
+    struct history: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
+      let historioVC = StoryboardViewControllerResource<SDHistorioViewController>(identifier: "HistorioVC")
       let name = "History"
+      
+      func historioVC(_: Void = ()) -> SDHistorioViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: historioVC)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.history().historioVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'historioVC' could not be loaded from storyboard 'History' as 'SDHistorioViewController'.") }
+      }
       
       fileprivate init() {}
     }
