@@ -18,16 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         // Check if launched from notification
 
-//        self.window?.rootViewController = {() -> UINavigationController in
-//            let nav: UINavigationController = UINavigationController()
-//            nav.navigationBar.isHidden = true
-//            nav.pushViewController(R.storyboard.main().instantiateInitialViewController()!, animated: true)
-//            return nav
-//        }()
-        print("--------")
-        let json: String = "{\"info_list\":[{\"nickname\":\"aaa\", \"email\":\"Suzuki@aaa.com\", \"password\":\"pass0001\"}, {\"nickname\":\"bbb\", \"email\":\"Tanaka@bbb.com\", \"password\":\"pass0001\"}]}"
-        let result = SDApiClient.decodeMyModel([User].self, from: json, keyString: "info_list")
-        print("User = \(result.decodableObj)")
         return true
     }
 

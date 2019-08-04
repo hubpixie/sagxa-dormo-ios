@@ -13,9 +13,33 @@ import RxCocoa
 class SDProfiloRedaktiloViewController: SDViewController {
 
     @IBOutlet private weak var messageLabel: UILabel!
-    @IBOutlet private weak var nicknameTextField: UITextField!
-    @IBOutlet private weak var emailTextField: UITextField!
-    @IBOutlet private weak var passwdTextField: UITextField!
+    @IBOutlet private weak var nicknameTextField: UITextField! {
+        didSet {
+            self.nicknameTextField.rx.controlEvent(.editingDidEndOnExit).asDriver()
+                .drive(onNext: { _ in
+                    self.nicknameTextField.resignFirstResponder()
+                })
+                .disposed(by: self._disposeBag)
+        }
+    }
+    @IBOutlet private weak var emailTextField: UITextField! {
+        didSet {
+            self.emailTextField.rx.controlEvent(.editingDidEndOnExit).asDriver()
+                .drive(onNext: { _ in
+                    self.emailTextField.resignFirstResponder()
+                })
+                .disposed(by: self._disposeBag)
+        }
+    }
+    @IBOutlet private weak var passwdTextField: UITextField! {
+        didSet {
+            self.passwdTextField.rx.controlEvent(.editingDidEndOnExit).asDriver()
+                .drive(onNext: { _ in
+                    self.passwdTextField.resignFirstResponder()
+                })
+                .disposed(by: self._disposeBag)
+        }
+    }
     @IBOutlet private weak var zipcodeTextField: UITextField! {
         didSet {
             self.addDoneButtonOnKeyboard(textField: self.zipcodeTextField)
@@ -42,6 +66,8 @@ class SDProfiloRedaktiloViewController: SDViewController {
 
         }
     }
+    @IBOutlet private weak var scrollView: UIScrollView!
+    
     private let _fooViewModel = FooViewModel()
     private let _disposeBag = DisposeBag()
 
@@ -53,6 +79,13 @@ class SDProfiloRedaktiloViewController: SDViewController {
 //        self.myIndicator.adjustToPosition(frame: self.registerButton.frame)
 //        self.myIndicator.startAnimatingEx(sender: nil)
         fetchAndShowDataToView()
+        
+        let point: CGPoint = self.nicknameTextField.convert(self.nicknameTextField.center, to: self.view)
+        print("point = \(point)")
+        print("bottom of nicknameTextField = \(point.y + self.nicknameTextField.frame.height)")
+        
+        // キーボード通知登録
+        self.keyboardDelegate = self
     }
     
 
@@ -111,7 +144,7 @@ class SDProfiloRedaktiloViewController: SDViewController {
 
 
 extension SDProfiloRedaktiloViewController {
-    func addDoneButtonOnKeyboard(textField: UITextField)
+    private func addDoneButtonOnKeyboard(textField: UITextField)
     {
         let doneToolbar: UIToolbar = UIToolbar()
        // doneToolbar.barStyle = .default
@@ -128,9 +161,37 @@ extension SDProfiloRedaktiloViewController {
         textField.inputAccessoryView = doneToolbar
     }
     
-    @objc func doneButtonAction()
+    @objc private func doneButtonAction()
     {
         self.zipcodeTextField.resignFirstResponder()
     }
+    
 }
 
+extension SDProfiloRedaktiloViewController: SDKeyboardDelegate {
+    func keyboardShow(keyboardFrame: CGRect) {
+        let startDate: Date = Date()
+        guard let txt: UITextField = self.scrollView.findSubViews().filter({ (v) -> Bool in
+            return (v as? UITextField)?.isFirstResponder ?? false
+        }).first as? UITextField
+        else  {return}
+        print("passed = \(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)")
+    
+        let bottomTxt: CGFloat = txt.superview!.convert(txt.frame.origin, to: self.view).y + txt.frame.height
+        let topKeyboard: CGFloat = self.view.bounds.height - keyboardFrame.height
+        
+        if bottomTxt >= topKeyboard {
+            self.scrollView.contentOffset.y = bottomTxt - topKeyboard + 10
+        }
+    }
+    func keyboardHide(keyboardFrame: CGRect) {
+        let startDate: Date = Date()
+        guard let _ = self.scrollView.findSubViews().filter({ (v) -> Bool in
+            return (v as? UITextField)?.isFirstResponder ?? false
+        }).first
+            else  {return}
+        print("passed2 = \(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)")
+
+        self.scrollView.contentOffset.y = 0
+    }
+}

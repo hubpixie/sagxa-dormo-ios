@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 @objc protocol SDKeyboardDelegate {
     @objc optional func keyboardShow(keyboardFrame: CGRect)
@@ -38,6 +40,8 @@ class SDViewController: UIViewController {
     static var mainViewController: SDViewController?
     static var inquireViewController: SDViewController?
 
+    private let _disposeBag = DisposeBag()
+    
     static var appDelegate: AppDelegate?  {
         get {return UIApplication.shared.delegate as? AppDelegate}
     }
@@ -58,28 +62,26 @@ class SDViewController: UIViewController {
         super.viewWillAppear(animated)
         
         if self.keyboardDelegate != nil {
-            NotificationCenter.default.addObserver(self,
-                                                   selector: #selector(self.keyboardWillShow(_:)),
-                                                   name: UIResponder.keyboardWillShowNotification,
-                                                   object: nil)
-            NotificationCenter.default.addObserver(self,
-                                                   selector: #selector(self.keyboardWillHide(_:)) ,
-                                                   name: UIResponder.keyboardWillHideNotification,
-                                                   object: nil)
+            NotificationCenter.default.rx.notification(UIResponder.keyboardWillShowNotification, object: nil)
+                .subscribe({ notification in
+                    if let element = notification.element {
+                        self.keyboardWillShow(element)
+                    }
+                })
+                .disposed(by: self._disposeBag)
+            
+            NotificationCenter.default.rx.notification(UIResponder.keyboardWillHideNotification, object: nil)
+                .subscribe({ notification in
+                    if let element = notification.element {
+                        self.keyboardWillHide(element)
+                    }
+                })
+                .disposed(by: self._disposeBag)
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        if self.keyboardDelegate != nil  {
-            NotificationCenter.default.removeObserver(self,
-                                                      name: UIResponder.keyboardWillShowNotification,
-                                                      object: self.view.window)
-            NotificationCenter.default.removeObserver(self,
-                                                      name: UIResponder.keyboardDidHideNotification,
-                                                      object: self.view.window)
-        }
     }
     
     /*

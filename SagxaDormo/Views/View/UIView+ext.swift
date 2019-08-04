@@ -170,7 +170,7 @@ extension UIView {
 
 // MARK: sub views recursive
 extension UIView {
-    func getSubviewsOf<T : UIView>(view:UIView) -> [T] {
+    class func getSubviewsOf<T: UIView>(view:UIView) -> [T] {
         var subviews = [T]()
         
         for subview in view.subviews {
@@ -182,5 +182,9 @@ extension UIView {
         }
         
         return subviews
+    }
+    
+    func findSubViews() -> [UIView] {
+        return subviews + subviews.flatMap { $0.findSubViews() }
     }
 }

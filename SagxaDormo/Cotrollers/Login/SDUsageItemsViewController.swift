@@ -31,7 +31,7 @@ class SDUsageItemsViewController: SDWebViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if  let scrollview: UIScrollView = self.contentView.getSubviewsOf(view: self.contentView).first(where: { (v) -> Bool in
+        if  let scrollview: UIScrollView = UIView.getSubviewsOf(view: self.contentView).first(where: { (v) -> Bool in
             return v is UIScrollView
         }) as? UIScrollView {
             scrollview.delegate = self
